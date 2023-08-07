@@ -6,9 +6,10 @@ body {
 .main-cart-book{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 2px 5px;
+    margin: 20px 0 250px 0;
 }
 
 .main img{
@@ -34,6 +35,7 @@ body {
     border-radius: 5px;
     background-color: rgb(241, 241, 241);
     cursor: pointer;
+    margin-bottom: 5px;
 }  
 
 .none{
@@ -49,6 +51,7 @@ body {
     margin: 2px;
     padding: 1px;
     border-radius: 5px;
+    /* flex-wrap: wrap; */
 } 
 
 #total{
@@ -59,9 +62,13 @@ body {
 }
 
 .cart-text{
+    margin: 5px;
+    padding: 5px;
     width: 50%;
 }
 .cart-price{
+    /* margin: 5px;
+    padding: 5px; */
     width: 20%;
 }
 .cart-remove{
@@ -71,4 +78,11 @@ body {
     align-items: center;
     margin: 2px;
     padding: 10px;
+}
+
+.cart-block{
+    position: fixed;
+}
+.main{
+    min-height: 100vh
 }

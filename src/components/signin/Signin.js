@@ -20,7 +20,7 @@ export default function SignIn() {
 
     return (
         <> 
-            <section className="header dark">
+            <section className="header">
                 <h1>JS BAND STORE/Barik&nbsp;Andrei </h1>
             </section>
             <div className="mainBlock">
