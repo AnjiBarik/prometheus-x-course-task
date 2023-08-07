@@ -40,10 +40,9 @@ export default function Header() {
           <img className="head-img custom-element" src={cart} alt="cart" />
         </Link>
 
-        {/* Виведення кількості книжок у кошику та загальної вартості, якщо вони є */}
+        {/* Виведення кількості заказів у кошику якщо вони є */}
         {cartItemsCount > 0 && (
-          //<span className="cart-count">📦 {cartItemsCount}<br></br>${totalCartPrice.toFixed(2)}</span>
-           <span className="cart-count">📦{cartItemsCount}</span>
+          <span className="cart-count">📦{cartItemsCount}</span>
         )}
 
         {/* Посилання на вихід з акаунта */}
