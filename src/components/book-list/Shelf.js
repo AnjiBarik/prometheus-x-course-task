@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import notFound from './img/imageNotFound.png';
 import { BooksContext } from '../../BooksContext';
 import PriceBlock from '../specific-book/PriceBlock';
-
 import cartIcon from '../cart/img/cart.svg';
 
 export default function Shelf(props) {

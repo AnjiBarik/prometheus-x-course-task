@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import cart from './img/cart.svg';
 import { BooksContext } from '../../BooksContext';
-
 import PriceBlock from '../specific-book/PriceBlock';
 
 export default function CartBook(props) {
