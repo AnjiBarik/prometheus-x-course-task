@@ -36,7 +36,7 @@ export default function SignIn() {
                         <label htmlFor="username">Username</label>
                         <input value={input} onChange={e => setInput(e.target.value)} type="text" id="username" title="Please enter a name with at least 4 characters" placeholder="type Username"/>
                         <Link to="/booklist">
-                        <button id='submit' type="button" disabled={input.length < 4 || input.length > 42} onClick={handleSignIn}>Sign In</button>
+                        <button id='submit' type="button" disabled={input.length < 4 || input.length > 16} onClick={handleSignIn}>Sign In</button>
                         </Link>
                     </div>
                 </section>
