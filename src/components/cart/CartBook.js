@@ -18,11 +18,6 @@ export default function CartBook(props) {
     setShowPriceBlock((prevState) => ({ ...prevState, [id]: true }));
   };
 
-  // Функція для приховання блоку з ціною при кліку поза книжкою
-  // const handleOutsideClick = (id) => {
-  //   setShowPriceBlock((prevState) => ({ ...prevState, [id]: false }));
-  // };
-
   // Перевіряємо, чи є книжки у кошику. Якщо кошик порожній, виводимо повідомлення
   if (!cartItems || cartItems.length === 0) {
     return (

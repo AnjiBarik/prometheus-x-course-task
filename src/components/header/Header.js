@@ -19,10 +19,12 @@ export default function Header() {
     const username = localStorage.getItem('username');
     const hashedUsername = SHA256(username).toString();
     const storedPurchases = JSON.parse(localStorage.getItem('purchases')) || {};
-   // Зберігаємо список покупок для даного хешу імені користувача
+    // Зберігаємо список покупок для даного хешу імені користувача
     storedPurchases[hashedUsername] = cartItems;
     localStorage.setItem('purchases', JSON.stringify(storedPurchases));
- 
+    // Очищаємо різні дані користувача
+    localStorage.removeItem('bookListInput');
+    localStorage.removeItem('bookListSelect');
     localStorage.removeItem('username');
     localStorage.removeItem('bookToCart');
   }
